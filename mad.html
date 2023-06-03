@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting</title>
+</head>
+<body>
+    
+    <script>
+        if( /Android/i.test(navigator.userAgent) ) {
+         // redirects if android
+            console.log("You are using a Android app");
+        } else if(/iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)){
+        // redirects if iOS
+            console.log("We currently do not support iOS");
+        } else {
+        // redirects if web
+            console.log("You are using a Web Browser");
+        }
+    </script>
+</body>
+</html>
