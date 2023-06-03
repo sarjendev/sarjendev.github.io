@@ -12,12 +12,15 @@
         if( /Android/i.test(navigator.userAgent) ) {
          // redirects if android
             console.log("You are using a Android app");
+            alert("You are using a Android app");
         } else if(/iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)){
         // redirects if iOS
             console.log("We currently do not support iOS");
+            alert("We do not support iOS at the moment");
         } else {
         // redirects if web
             console.log("You are using a Web Browser");
+            alert("You are using a Web app");
         }
     </script>
 </body>
